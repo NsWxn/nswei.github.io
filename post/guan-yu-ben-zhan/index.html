@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>文章归档 | Gridea</title>
+<title>关于本站！ | Gridea</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -12,13 +12,22 @@
 <link rel="stylesheet" href="https://nswwei.github.io/styles/main.css">
 
 
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
-    <meta name="description" content="温故而知新">
+    <meta name="description" content="希望大家在这里能找到快乐，未来我会继续完善这个网站，目前只是静态网站，仅供浏览使用。
+——ning
+" />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -88,47 +97,36 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          
+          <div class="post-detail">
+            <h2 class="post-title">关于本站！</h2>
+            <div class="post-date">2021-02-21</div>
+            
+            <div class="post-content" v-pre>
+              <p>希望大家在这里能找到快乐，未来我会继续完善这个网站，目前只是静态网站，仅供浏览使用。<br>
+——ning</p>
 
-          <h2 class="archives-title">文章归档</h2>
-          <div class="archives-container">
+            </div>
             
-              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2021</h2>
-              
-                
-                  <article class="post">
-                    <a href="https://nswwei.github.io/post/guan-yu-ben-zhan/">
-                      <h2 class="post-title">
-                        关于本站！
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-                
-              
             
-              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2018</h2>
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://nswwei.github.io/post/hello-gridea/">
+                  <h3 class="post-title">
+                    你好朋友们！
+                  </h3>
+                </a>
+              </div>
+            
+
+            
               
-                
+                <div id="gitalk-container" data-aos="fade-in"></div>
               
-                
-                  <article class="post">
-                    <a href="https://nswwei.github.io/post/hello-gridea/">
-                      <h2 class="post-title">
-                        你好朋友们！
-                      </h2>
-                    </a>
-                  </article>
-                
+
               
             
+
           </div>
-
-          <div class="pagination-container">
-  
-  
-</div>
 
         </div>
       </div>
@@ -149,6 +147,29 @@ var app = new Vue({
 </script>
 
 
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'B4ad2f82aff931720ef0',
+        clientSecret: 'B4ad2f82aff931720ef0',
+        repo: 'nswwei.github.io',
+        owner: 'nswwei',
+        admin: ['nswwei'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 

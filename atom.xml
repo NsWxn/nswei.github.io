@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nswwei.github.io</id>
     <title>Gridea</title>
-    <updated>2021-02-21T06:22:31.274Z</updated>
+    <updated>2021-02-21T06:37:20.402Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nswwei.github.io"/>
     <link rel="self" href="https://nswwei.github.io/atom.xml"/>
@@ -10,6 +10,16 @@
     <logo>https://nswwei.github.io/images/avatar.png</logo>
     <icon>https://nswwei.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[关于本站！]]></title>
+        <id>https://nswwei.github.io/post/guan-yu-ben-zhan/</id>
+        <link href="https://nswwei.github.io/post/guan-yu-ben-zhan/">
+        </link>
+        <updated>2021-02-21T06:33:46.000Z</updated>
+        <content type="html"><![CDATA[<p>希望大家在这里能找到快乐，未来我会继续完善这个网站，目前只是静态网站，仅供浏览使用。<br>
+——ning</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[你好朋友们！]]></title>
         <id>https://nswwei.github.io/post/hello-gridea/</id>
